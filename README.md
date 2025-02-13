@@ -1,7 +1,7 @@
 ## **1. Diagrama de Classe**
 O diagrama abaixo representa as entidades do sistema e seus relacionamentos:
 
-(<img width="385" alt="image" src="https://github.com/user-attachments/assets/aa7af244-fb3a-4ff5-a518-e0dcf96c87bc" />)
+<img width="385" alt="image" src="https://github.com/user-attachments/assets/aa7af244-fb3a-4ff5-a518-e0dcf96c87bc" />
 
 - **Filme**: Entidade principal, com propriedades como `id`, `título`, `diretor`, `ano` e `duracao`.
 - 
