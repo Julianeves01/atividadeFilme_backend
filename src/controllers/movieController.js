@@ -1,5 +1,5 @@
-const Movie = require("../modules/Movie.js");
-const MovieList = require("../modules/MovieList.js");
+const Movie = require("../models/Movie.js");
+const MovieList = require("../models/MovieList.js");
 
 const lista = new MovieList();
 
@@ -52,7 +52,8 @@ const router = {
 
     updateMovie: (req, res) => {
         try {
-            res.status(200).json(lista.updateMovie(req.params.id, req.body));
+            res.status(200 ).json(lista.updateMovie(req.params.id, req.body), );
+            res.status(200).json({message: "Filme atualizado com sucesso"});
         } catch (error) {
             res.status(404).json({
                 message: "Erro ao atualizar o filme",
