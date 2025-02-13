@@ -56,7 +56,7 @@ A API utiliza o formato JSON para transmitir e receber dados. Exemplos:
 }
 ```
 
-## **5. Formato XML** | <![image] (![xml](https://github.com/user-attachments/assets/0a4a02a5-9c33-4a67-ae5f-485fb32a5a14)
+## **5. Formato XML** | (![xml](https://github.com/user-attachments/assets/0a4a02a5-9c33-4a67-ae5f-485fb32a5a14)
 )
 Embora JSON seja o principal formato, um exemplo de estrutura em XML seria:
 
