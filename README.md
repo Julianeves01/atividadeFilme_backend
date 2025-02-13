@@ -1,8 +1,7 @@
 ## **1. Diagrama de Classe** | 📊
 O diagrama abaixo representa as entidades do sistema e seus relacionamentos:
 
-<![image](https://github.com/user-attachments/assets/cbcb4dab-eb87-4271-ad49-9444335b6c28)
-/>
+[image](https://github.com/user-attachments/assets/cbcb4dab-eb87-4271-ad49-9444335b6c28)
 
 ## **2. Arquitetura MVC** 🧩📐
 O projeto está organizado seguindo o padrão MVC:
