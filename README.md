@@ -1,13 +1,10 @@
-## **1. Diagrama de Classe**
+## **1. Diagrama de Classe** | 📊
 O diagrama abaixo representa as entidades do sistema e seus relacionamentos:
 
-<img width="385" alt="image" src="https://github.com/user-attachments/assets/aa7af244-fb3a-4ff5-a518-e0dcf96c87bc" />
+<![image](https://github.com/user-attachments/assets/cbcb4dab-eb87-4271-ad49-9444335b6c28)
+/>
 
-- **Filme**: Entidade principal, com propriedades como `id`, `título`, `diretor`, `ano` e `duracao`.
-- 
-- **FilmeList**: Gerencia uma lista de filmes e operações CRUD.
-
-## **2. Arquitetura MVC**
+## **2. Arquitetura MVC** 🧩📐
 O projeto está organizado seguindo o padrão MVC:
 
 ```
@@ -21,11 +18,8 @@ src/
 │   ├── filmeRoutes.js
 ├── server.js
 ```
-- **Models**: Define as classes e lógica de dados.
-- **Controllers**: Contém as funções que lidam com as requisições e respostas.
-- **Routes**: Gerencia as rotas da API.
 
-## **3. Dependências**
+## **3. Dependências** 
 No package.json, as seguintes dependências são usadas no peojeto:
 ```json
 {
@@ -39,3 +33,50 @@ No package.json, as seguintes dependências são usadas no peojeto:
 
 ## **4. Formato JSON**
 A API utiliza o formato JSON para transmitir e receber dados. Exemplos:
+### **Criar Filme (POST /api/filmes)**
+```json
+{
+  "title": "Elementos",
+  "genre": "Animação",
+  "duration": "149",
+  "director": "Pete Docter"
+}
+```
+
+### **Resposta de Sucesso** | ✔
+```json
+{
+  "message": "Filme registrado com sucesso!",
+  "movie": {
+      "id": "c40d6214-c51b-4f3d-a615-93d20862f775",
+      "title": "Elementos",
+      "genre": "Animação",
+      "duration": "149",
+      "director": "Pete Docter"
+      }
+}
+```
+
+## **5. Formato XML** | <![image] (https://www.flaticon.com/br/icone-gratis/xml_136526?term=xml&page=1&position=1&origin=tag&related_id=136526)
+Embora JSON seja o principal formato, um exemplo de estrutura em XML seria:
+
+```xml
+<movie>
+  <title>Elementos</title>
+  <genre>Comédia</genre>
+  <duration>149</duration>
+  <director>Pete Docter</director>
+</movie>
+```
+## **6. Testes com Postman** | 
+
+Uma coleção de requisições foi criada para testar a API no Postman. 
+
+Endpoints:
+- **POST /api/filmes**: Cria um novo filme.
+- **GET /api/filmes**: Retorna todos os filmes.
+- **GET /api/filmes/:id**: Retorna um filme específico.
+- **PUT /api/filmes/:id**: Atualiza informações de um filme.
+- **DELETE /api/filmes/:id**: Remove um filme.
+
+
