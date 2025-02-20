@@ -80,4 +80,6 @@ Endpoints:
 - **PUT /api/filmes/:id**: Atualiza informações de um filme.
 - **DELETE /api/filmes/:id**: Remove um filme.
 
+## **7. Confira as rotas** | 🚊
+
 
